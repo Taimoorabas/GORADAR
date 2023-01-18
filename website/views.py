@@ -12,7 +12,7 @@ def job(request):
   
     farhan= job_details.objects.raw('select * from auth_job_details')
         
-    print(  farhan)
+    
     
 
     return render(request,'user/job.html',{'farhan':farhan})
