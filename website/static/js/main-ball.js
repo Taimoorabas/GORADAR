@@ -47,13 +47,13 @@ var navBGManager = new NavBBGManager();
   }
 
 
-  function setCanvasSize( newCanvas) {
-   
-    newCanvas.width = getViewportWidth() * getViewportDPI();
-    newCanvas.height = ( getViewportHeight() * getViewportDPI() );
+    function setCanvasSize( newCanvas) {
+    
+      newCanvas.width = getViewportWidth() * getViewportDPI();
+      newCanvas.height = ( getViewportHeight() * getViewportDPI() );
 
-    return newCanvas;
-  }
+      return newCanvas;
+    }
 
 
   function setCanvasContext( newCanvas ) {
@@ -154,7 +154,7 @@ var navBGManager = new NavBBGManager();
     this.explosionWidth = 500;
 
     this.ballImage = new Image();
-    this.ballImage.src = './Resources/img/ball-temp-2.png';
+    this.ballImage.src = "../../static/img/ball-temp-3.png"
   }
 
 
@@ -365,7 +365,8 @@ var navBGManager = new NavBBGManager();
     this.y = y;
     this.dirX;
     this.dirY;
-    this.colour = '#414141';
+    // this.colour = '#414141';
+    this.colour = 'blue';
   }
 
 

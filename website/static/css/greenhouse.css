@@ -1,0 +1,990 @@
+/*!dev by sebastianlenton.com*/
+
+
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+progress {
+    vertical-align: baseline
+}
+
+[hidden],
+template {
+    display: none
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+a:active,
+a:hover {
+    outline-width: 0
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b,
+strong {
+    font-weight: inherit;
+    font-weight: bolder
+}
+
+dfn {
+    font-style: italic
+}
+
+#main_fields .heading,
+#submit_app,
+.content h2,
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+mark {
+    background-color: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+img {
+    border-style: none
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font: inherit;
+    margin: 0
+}
+
+optgroup {
+    font-weight: 700
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+    -webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox],
+[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: .54
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    font-size: 16px
+}
+
+@media (min-width:37.5em) {
+    html {
+        font-size: 16px
+    }
+}
+
+@media (min-width:59.375em) {
+    html {
+        font-size: 18px
+    }
+}
+
+@media (min-width:68.75em) {
+    html {
+        font-size: 24px
+    }
+}
+
+@media (min-width:96.875em) {
+    html {
+        font-size: 29px
+    }
+}
+
+@font-face {
+    font-family: GT Pressura;
+    src: url(https://goradar.com/wp-content/themes/wpt_goradar/library/fonts/GT-Pressura/GT-Pressura-Regular.eot);
+    src: url(https://goradar.com/wp-content/themes/wpt_goradar/library/fonts/GT-Pressura/GT-Pressura-Regular.eot#iefix) format("embedded-opentype"), url(https://goradar.com/wp-content/themes/wpt_goradar/library/fonts/GT-Pressura/GT-Pressura-Regular.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal
+}
+
+@font-face {
+    font-family: GT Pressura;
+    src: url(https://goradar.com/wp-content/themes/wpt_goradar/library/fonts/GT-Pressura/GT-Pressura-Light.eot);
+    src: url(https://goradar.com/wp-content/themes/wpt_goradar/library/fonts/GT-Pressura/GT-Pressura-Light.eot#iefix) format("embedded-opentype"), url(https://goradar.com/wp-content/themes/wpt_goradar/library/fonts/GT-Pressura/GT-Pressura-Light.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal
+}
+
+@font-face {
+    font-family: GT Pressura Mono;
+    src: url(https://goradar.com/wp-content/themes/wpt_goradar/library/fonts/GT-Pressura/GT-Pressura-Mono-Regular.eot);
+    src: url(https://goradar.com/wp-content/themes/wpt_goradar/library/fonts/GT-Pressura/GT-Pressura-Mono-Regular.eot#iefix) format("embedded-opentype"), url(https://goradar.com/wp-content/themes/wpt_goradar/library/fonts/GT-Pressura/GT-Pressura-Mono-Regular.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal
+}
+
+@font-face {
+    font-family: GT Pressura Mono;
+    src: url(https://goradar.com/wp-content/themes/wpt_goradar/library/fonts/GT-Pressura/GT-Pressura-Mono-Light.eot);
+    src: url(https://goradar.com/wp-content/themes/wpt_goradar/library/fonts/GT-Pressura/GT-Pressura-Mono-Light.eot#iefix) format("embedded-opentype"), url(https://goradar.com/wp-content/themes/wpt_goradar/library/fonts/GT-Pressura/GT-Pressura-Mono-Light.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal
+}
+
+::-moz-selection {
+    background: #ff6b00;
+    color: #fff
+}
+
+::selection {
+    background: #ff6b00;
+    color: #fff
+}
+
+body {
+    color: #000
+}
+
+#main_fields .heading,
+#submit_app,
+.content h2,
+.opening,
+.opening a,
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+hr,
+li,
+ol,
+p,
+ul {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    /* list-style: none; */
+    
+}
+
+.charReverse {
+    display: inline-block;
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1)
+}
+
+.opening,
+.opening a,
+input,
+li,
+p,
+body {
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    font-size: 1rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-family: GT Pressura, helvetica neue, sans-serif;
+    color: #2b2b2b;
+    letter-spacing: .015rem
+}
+
+.small {
+    font-size: .75rem
+}
+
+.mono {
+    font-family: GT Pressura Mono, courier, monospace!important
+}
+
+ol,
+ul {
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem
+}
+
+li {
+    margin-bottom: 0
+}
+
+a {
+    color: #2b2b2b;
+    text-decoration: none
+}
+
+a:hover {
+    color: #ff6b00
+}
+
+a:hover svg path {
+    fill: #ff6b00
+}
+
+.a--hoverWhite a:hover {
+    color: #fff!important
+}
+
+.a--hoverWhite a:hover svg path {
+    fill: #fff!important
+}
+
+#main_fields .heading,
+#submit_app,
+.content h2,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: GT Pressura, helvetica neue, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+    /* color: #ff6b00 */
+    color: #C25B56;
+}
+
+.bigHeader {
+    font-weight: 700;
+    font-size: 2rem
+}
+
+hr {
+    height: .25rem;
+    border: none;
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    color: #858585;
+    background: #858585
+}
+
+.viewportTextResize {
+    font-size: 16px
+}
+
+@media (min-width:81.25em) {
+    .viewportTextResize {
+        font-size: 18px
+    }
+}
+
+@media (min-width:100em) {
+    .viewportTextResize {
+        font-size: 24px
+    }
+}
+
+ @media (min-width:156.25em) {
+    .viewportTextResize {
+        font-size: 29px
+    }
+} 
+
+ input {
+    border-radius: 0;
+    outline: 0
+} 
+
+ .btn {
+    color: #fff;
+    background-color: red;
+    line-height: 1;
+    padding: .7em 1.8em .725em;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: 300;
+    font-family: GT Pressura Mono, courier, monospace;
+    margin-bottom: 1.5rem;
+    cursor: pointer
+} 
+
+ .btn:hover {
+    background: #000
+} 
+
+ body {
+    background: #f2f2f2
+} 
+
+ a,
+a:hover {
+    /* color: #ff6b00!important; */
+    text-decoration: none
+} 
+
+@media (min-width:500px) {
+    .opening,
+    .opening a,
+    /* li, */
+    p {
+        width: 65%;
+        
+        
+    }
+}
+
+ol,
+ul {
+    margin-bottom: 2rem;
+   
+    
+}
+
+ol li,
+ul li {
+    
+}
+
+ul {
+    list-style: none;
+    margin-left: 2rem
+}
+
+li {
+    position: relative
+}
+
+ul li:before {
+    content: "";
+    /* background-color: #ff6b00; */
+    background-color: white;
+    display: block;
+    position: absolute;
+    top: .5em;
+    left: -1.95em;
+    height: .2rem;
+    width: .2rem;
+    background-clip: padding-box
+}
+
+
+h2 {
+    color: #858585;
+    font-size: .75rem
+}
+
+.opening {
+    font-weight: 400;
+    margin-bottom: .75rem
+}
+
+.opening a {
+    font-weight: 700
+}
+
+.opening .location {
+    color: #000
+}
+
+#header #main_fields .heading,
+#header #submit_app,
+#header .content h2,
+#header h1,
+#main_fields #header .heading,
+.content #header h2 {
+    margin-bottom: .25rem
+}
+
+#header .company-name,
+#header .location,
+#header a {
+    font-family: GT Pressura Mono, courier, monospace;
+    font-size: .65rem
+}
+
+#header .company-name {
+    font-weight: 700
+}
+
+#header .location {
+    color: #858585;
+    text-transform: uppercase;
+    margin-top: 1.25rem;
+    margin-bottom: 1rem
+}
+
+#header a {
+    /* color: #ff6b00; */
+    color: #C25B56;
+    font-weight: 700
+}
+
+#logo {
+    display: none
+}
+
+#wrapper {
+    max-width: none;
+    padding: 0;
+    padding-left: 20px;
+}
+
+#main {
+    padding-bottom: 2rem
+}
+
+#board_title {
+    margin-top: 3rem
+}
+
+#app_body {
+    max-width: none;
+    padding-top: 20px;
+    padding-right: 20px
+}
+
+#app_body h2 {
+    text-transform: none;
+    color: #000;
+    font-size: 1rem
+}
+
+form {
+    font-size: 1rem;
+    font-family: GT Pressura, helvetica neue, sans-serif
+}
+
+#application {
+    padding: 0;
+    max-width: none;
+    background: #f2f2f2
+}
+
+#application hr {
+    margin: 3rem 0
+}
+
+#application_form {
+    /* background: #f2f2f2 */
+}
+
+hr {
+    background: #000!important;
+    color: #000!important
+}
+
+hr:nth-of-type(3n) {
+    background: blue;
+    color: blue
+}
+
+.asterisk {
+    font-size: 1rem!important
+}
+
+#main_fields .heading {
+    margin-top: 2rem;
+    margin-bottom: 2rem
+}
+
+#main_fields .required-fields {
+    color: #000!important
+}
+
+@media (min-width:40em) {
+    #main_fields .required-fields {
+        position: relative;
+        top: .05rem
+    }
+}
+
+#main_fields .asterisk,
+#main_fields .required-fields {
+    margin-top: 2rem
+}
+
+#main_fields .clear+.apply-with-linkedin {
+    opacity: .8;
+    position: relative;
+    top: 0;
+    left: 0
+}
+
+#main_fields .clear+.apply-with-linkedin:before {
+    font-family: GT Pressura Mono, courier, monospace;
+    background-color: #0077b5;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: .55rem .75rem;
+    content: "Apply With LinkedIn";
+    opacity: 1;
+    text-transform: uppercase;
+    font-size: .75rem!important
+}
+
+#main_fields .apply-with-linkedin button {
+    opacity: 0;
+    position: absolute;
+    outline: 1px solid red;
+    left: 0;
+    top: -.5rem;
+    height: 2.3rem;
+    width: 11.5rem
+}
+
+#main_fields .linkedin-apply-optional {
+    font-family: GT Pressura Mono, courier, monospace;
+    text-transform: lowercase
+}
+
+@media (min-width:40em) {
+    #main_fields .linkedin-apply-optional {
+        position: relative;
+        top: -.25rem
+    }
+}
+
+#custom_fields div.field,
+#main_fields div.field {
+    overflow: hidden
+}
+
+#custom_fields div.field label,
+#main_fields div.field label {
+    font-size: 1rem
+}
+
+#custom_fields div.field input[type=text],
+#custom_fields div.field textarea,
+#main_fields div.field input[type=text],
+#main_fields div.field textarea {
+    padding: .8rem .6rem;
+    font-size: 1rem;
+    font-family: GT Pressura Mono, courier, monospace
+}
+
+@media (min-width:40em) {
+    #main_fields div.field {
+        margin-bottom: 1rem!important
+    }
+}
+
+#main_fields div.field label {
+    width: 28%;
+    float: left;
+    text-align: right;
+    position: relative
+}
+
+@media (min-width:40em) {
+    #main_fields div.field label:not([for]) {
+        position: relative;
+        top: .175rem
+    }
+}
+
+@media (min-width:40em) {
+    #main_fields div.field input[type=text],
+    #main_fields div.field textarea {
+        width: 70%!important;
+        float: right
+    }
+}
+
+#main_fields div[data-messages] {
+    position: relative;
+    top: .175rem;
+    padding: 0 0 .5rem
+}
+
+@media (min-width:40em) {
+    #main_fields div[data-messages] {
+        left: .5rem
+    }
+}
+
+@media (min-width:40em) {
+    #main_fields .field+.field+.field+.field+.field+.field {
+        overflow: visible;
+        padding-top: 2rem;
+        margin-bottom: .5rem!important
+    }
+    #main_fields .field+.field+.field+.field+.field+.field+.field {
+        padding-top: 0;
+        padding-bottom: 0
+    }
+}
+
+@media (min-width:40em) {
+    #custom_fields div.field {
+        overflow: visible
+    }
+    #custom_fields div.field label {
+        width: 28%;
+        float: left;
+        text-align: right;
+        height: 4rem;
+        width: 100%;
+        padding-right: 70%;
+        line-height: 1.2;
+        position: relative;
+        top: .5rem;
+        left: -.8rem
+    }
+    #custom_fields div.field label input[type=text] {
+        position: absolute;
+        top: -1.15rem;
+        left: calc(30% + .8rem);
+        width: 70%
+    }
+}
+
+@media (min-width:40em) {
+    label[for=email],
+    label[for=first_name],
+    label[for=job_application_location],
+    label[for=last_name],
+    label[for=phone] {
+        position: relative;
+        top: .9rem
+    }
+}
+
+#main_fields .locate-me {
+    display: none
+}
+
+#submit_app {
+    border-radius: .15rem;
+    background:#C25B56!important;
+    text-shadow: none;
+    color: #fff!important;
+    padding: .75rem 1.25rem
+}
+
+#main_fields .link-container a {
+    text-transform: uppercase;
+    border-radius: 0;
+    border: none!important;
+    background: #fff;
+    color: #000!important;
+    font-family: GT Pressura Mono, courier, monospace!important;
+    box-shadow: none
+}
+
+@media (min-width:40em) {
+    #main_fields .link-container a {
+        padding: .2rem 1rem .25rem;
+        display: inline-block;
+        margin-right: .5rem;
+        font-size: .6rem;
+        font-weight: 700;
+        position: relative;
+        left: .6rem
+    }
+    #main_fields .link-container a:after {
+        content: ""
+    }
+}
+
+@media (min-width:40em) {
+    #cover_letter_text,
+    #resume_text {
+        margin-top: .6rem!important
+    }
+}
+
+@media (min-width:40em) {
+    #resume_text {
+        margin-bottom: 1rem!important
+    }
+}
+
+@media (min-width:40em) {
+    #cover_letter_text {
+        margin-bottom: 1.5rem!important
+    }
+}
+
+.field-error-msg {
+    font-weight: 700;
+    padding-left: 30%!important;
+    color: red
+}
+
+@media (min-width:40em) {
+    .field-error-msg {
+        display: inline-block;
+        margin-top: .25rem
+    }
+}
+
+#main_fields .locate-me+span+label {
+    display: none!important
+}
+
+span[data-id]+.field-error-msg {
+    padding-left: 30%!important;
+    width: 100%;
+    overflow: hidden
+}
+
+@media (max-width:39.9375em) {
+    #job_application_answers_attributes_2_text_value+.field-error-msg {
+        padding-left: 0!important
+    }
+}
+
+@media (min-width:40em) {
+    #job_application_answers_attributes_2_text_value+.field-error-msg {
+        position: absolute;
+        top: 60px;
+        left: .8rem
+    }
+}
+
+@media (min-width:40em) {
+    #custom_fields>.field+.field+.field {
+        padding-bottom: 4rem
+    }
+}
+
+#application_form #main_fields div .locate-me:nth-of-type(2n) {
+    display: none
+}
+
+@media print {
+    * {
+        background: transparent!important;
+        color: #000!important;
+        text-shadow: none!important;
+        -webkit-filter: none!important;
+        filter: none!important;
+        -ms-filter: none!important
+    }
+    a,
+    a:visited {
+        color: #444!important;
+        text-decoration: underline
+    }
+    a:after,
+    a:visited:after {
+        content: " (" attr(href) ")"
+    }
+    a:visited abbr[title]:after,
+    a abbr[title]:after {
+        content: " (" attr(title) ")"
+    }
+    .ir a:after,
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: ""
+    }
+    blockquote,
+    pre {
+        border: 1px solid #999;
+        page-break-inside: avoid
+    }
+    thead {
+        display: table-header-group
+    }
+    img,
+    tr {
+        page-break-inside: avoid
+    }
+    img {
+        max-width: 100%!important
+    }
+    @page {
+        margin: .5cm
+    }
+    .opening,
+    .opening a,
+    h2,
+    h3,
+    p {
+        orphans: 3;
+        widows: 3
+    }
+    h2,
+    h3 {
+        page-break-after: avoid
+    }
+    .page-navigation,
+    .respond-form,
+    .sidebar,
+    .wp-prev-next,
+    nav {
+        display: none
+    }
+}

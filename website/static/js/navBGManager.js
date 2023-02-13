@@ -30,8 +30,8 @@ NavBBGManager.prototype.setZindex = function( newZIndex ) {
 
 NavBBGManager.prototype.setBGColour = function( newBGColour ) {
   if( this.logoBGHTML && this.navBGHTML ) {
-    this.logoBGHTML.style.backgroundColor = newBGColour;
-    this.navBGHTML.style.backgroundColor = newBGColour;
+    // this.logoBGHTML.style.backgroundColor = newBGColour;
+    // this.navBGHTML.style.backgroundColor = newBGColour;
   }
 }
 

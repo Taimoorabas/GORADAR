@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Wavy login form</title>
+  <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+  <link rel='stylesheet' id='SFL-stylesheet-css' href='./static/devstatic/css/style.css' type='text/css' media='all' />
+</head>
+<body>
+  <img src="./static/img/logo_transparent.png" alt="" height="80px" width="150px">
+<!-- partial:index.partial.html -->
+<form class="login" action="" method="post">
+    {% csrf_token %}
+  <input type="text" placeholder="Username" name="Username">
+  <input type="password" placeholder="Password" name="password">
+  <button>login</button>
+</form>
+
+<!-- <a href="https://codepen.io/davinci/" target="_blank">check my other pens</a> -->
+<!-- partial -->
+  
+</body>
+</html>

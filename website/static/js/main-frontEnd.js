@@ -12,7 +12,7 @@ var logoMain = document.querySelector( '.js-logoMain' );
 
 var aboutPane = document.querySelector( '.js-paneAbout' );
 //var aboutPaneClose = document.querySelector( '.js-paneAbout__btnClose' );
-var aboutLink = document.querySelector( '.js-aboutLink' );
+let aboutLink = document.querySelector( '.js-aboutLink' );
 var aboutCredit = document.querySelector( '.js-aboutCredit' );
 
 /***** BODY FADEIN *****/
@@ -128,11 +128,11 @@ function aboutPaneCheckOpen() {
 /***** ADD OR REMOVE "ABOUT" LINK PSEUDO ELEMENT CLASS *****/
 
 function aboutLinkUnderlineAdd() {
-  aboutLink.firstChild.classList.add( 'underlinePseudo' );
+  aboutLink.classList.add( 'underlinePseudo' );
 }
 
 function aboutLinkUnderlineRemove() {
-  aboutLink.firstChild.classList.remove( 'underlinePseudo' );
+  aboutLink.classList.remove( 'underlinePseudo' );
 }
 
 

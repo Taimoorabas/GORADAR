@@ -247,7 +247,7 @@ html {
 @font-face {
     font-family: GT Pressura Mono;
     src: url(/wp-content/themes/wpt_goradar/library/fonts/GT-Pressura/GT-Pressura-Mono-Light.eot);
-    src: url(/wp-content/themes/wpt_goradar/library/fonts/GT-Pressura/GT-Pressura-Mono-Light.eot?#iefix) format("embedded-opentype"), url(/Resources/GT-Pressura-Mono-Light.woff) format("woff");
+    src: url(/wp-content/themes/wpt_goradar/library/fonts/GT-Pressura/GT-Pressura-Mono-Light.eot?#iefix) format("embedded-opentype"), url(/static/GT-Pressura-Mono-Light.woff) format("woff");
     font-weight: 400;
     font-style: normal;
     font-stretch: normal
@@ -458,7 +458,8 @@ body.active {
 }
 
 .c-orange {
-    color: #ff6b00
+    /* color: #ff6b00 */
+     color: #C25B56;
 }
 
 .c-black {
@@ -478,7 +479,8 @@ body.active {
 }
 
 .c-white {
-    color: #fff
+    /* color: #fff */
+    color: #524747;
 }
 
 .c-darkOrange {
@@ -523,7 +525,9 @@ input, li, p, body {
     margin-bottom: 1.5em;
     font-weight: 400;
     font-family: GT Pressura, helvetica neue, sans-serif;
-    color: #2b2b2b;
+    /* color: #2b2b2b;
+     */
+     color: white;
     letter-spacing: .015em
 }
 
@@ -545,7 +549,8 @@ li {
 }
 
 a {
-    color: #2b2b2b;
+    /* color: #2b2b2b; */
+    color:#939393;
     text-decoration: none
 }
 
@@ -565,12 +570,14 @@ a:hover svg path {
     fill: #fff !important
 }
 
+
 .h1, .h2, .h3, .h4, .h5, h1, h2, h3, h4, h5 {
     font-family: GT Pressura, helvetica neue, sans-serif;
     text-transform: uppercase;
     font-size: 1.35em;
     margin-bottom: 1em;
-    color: #ff6b00;
+    /* color: #ff6b00; */
+    color: #C25B56;
     letter-spacing: .03em
 }
 
@@ -840,7 +847,7 @@ input {
 }
 
 .btn:hover {
-    background: #000
+    background: rgb(219, 23, 23)
 }
 
 .logoMain {
@@ -865,9 +872,16 @@ input {
 }
 
 .texts--landscape .logoMain {
-    top: 4.65116vh;
-    left: 4.65116vh
+    /* top: 4.65116vh;
+    left: 4.65116vh */
+
+    
+    top: 0.65116vh;
+    left: 3.65116vh;
 }
+
+
+
 
 .navMain {
     position: fixed;
@@ -895,7 +909,7 @@ input {
 }
 
 .menu-item a:hover {
-    color: #ff6b00
+    color:#C25B56
 }
 
 .menu-item a.underlinePseudo:before {
@@ -921,7 +935,7 @@ input {
 }
 
 .frontPage .menu-item a:hover {
-    color: #ff6b00
+    color: #C25B56
 }
 
 .texts--portrait .menu-item {
@@ -937,7 +951,7 @@ input {
 }
 
 .body--aboutPaneOpen .menu-item a:hover {
-    color: #fff
+    /* color: #fff */
 }
 
 .touchDevice a:hover {
@@ -1063,7 +1077,7 @@ input {
 
 .mailingList__submitSVG {
     float: right;
-    background: #ff6b00;
+    background: #C25B56;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -1088,7 +1102,7 @@ input {
 }
 
 .mailingList__submitSVG:hover {
-    background: #ff8933
+    background:  #f05a52
 }
 
 .mailingList__submitSVG svg {
@@ -1231,6 +1245,7 @@ input {
     top: 40%;
     border-radius: 999px;
     display: none
+    
 }
 
 .orangeDot.active {
@@ -1267,11 +1282,13 @@ input {
 }
 
 .arrowScrollDown:hover {
-    fill: #ff6b00
+    fill: #C25B56
 }
 
 .text__item {
-    font-weight: 700
+    font-weight: 700;
+    /* color: white; */
+    
 }
 
 .longAnimTrack {
@@ -1535,7 +1552,7 @@ input {
 }
 
 .pips__pip--active svg circle {
-    fill: #ff6b00
+    fill: #C25B56
 }
 
 .aboutPane {
